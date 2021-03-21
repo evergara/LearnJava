@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 15
+targetCompatibility = 15
+
+group 'com.ecosoft'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
