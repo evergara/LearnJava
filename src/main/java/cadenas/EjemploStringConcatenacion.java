@@ -1,31 +1,36 @@
 package cadenas;
 
-public class EjemploString {
+public class EjemploStringConcatenacion {
     public static void main(String[] args) {
         String curso = "Programacion Java";
-        String curso2 = "Programacion Java";
+        String curso2 = "Diseño con Java";
+        String profesor = "Emerson vergara";
 
-        String cursoNew = new String("Programacion Java");
-        String cursoNew2 = new String("Programacion JAVA");
-        //
+        String detalles = curso + " Con el intructor " + profesor;
+        System.out.println("detalles = " + detalles);
 
-        //no es igual por que so objetos diferentes y aqui comparamos los objetos en este caso por que son referencia
-        boolean esIgual= curso == cursoNew;
-        System.out.println("curso == cursoNew => " + esIgual);
+        int numeroA = 10;
+        int numeroB = 15;
 
-        //Debe dar true por que aqui se compara por valor y los valores son iguales
-        esIgual = curso.equals(cursoNew);
-        System.out.println("curso.equals(cursoNew) => " + esIgual);
+        //Ojo con estos ejemplo influye la ley presendencia de los operadores(de izquierda a derecha)
+        System.out.println(detalles + numeroA + numeroB);
+        System.out.println(numeroA + numeroB + detalles);
+        System.out.println(detalles + (numeroA + numeroB));
 
-        //Debe dar true por que aqui se compara por valor y la opion equalsIgnoreCase pone los valores iguales
-        // encuanto a mayusculas y minusculas los valores son iguales
-        esIgual = curso.equalsIgnoreCase(cursoNew2);
-        System.out.println("curso.equalsIgnoreCase(cursoNew2) => " + esIgual);
+        //Los string son inmutables no cambian los metodos de los string devuelven otra Instacia
+        
+        String detalle2 = curso.concat(" Con el intructor ").concat(profesor);
+        System.out.println("detalle2 = " + detalle2);
 
-        //Debe dar true por que aqui compara por referencia y en este caso la maquina virtual apesar de que son dos objetos
-        //al momento de crear el segundo solo pone una referencia al primero
-        esIgual= curso == curso2;
-        System.out.println("curso == curso2 =>" + esIgual);
+
+        String detalle3 = curso.transform(c -> {
+           return c.concat(" con el intructor ").concat(profesor);
+        });
+
+        System.out.println("detalle3 = " + detalle3);
+
+        System.out.println("Curso sigue igual = " + curso);
+
     }
 
 }
