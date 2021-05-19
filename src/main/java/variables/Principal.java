@@ -4,7 +4,7 @@ import java.util.Locale;
 
 public class Principal {
     public static void main(String[] args) {
-        String name = "Emerson vergara";
+        String name = "E vergara";
         int number = 7;
         var variable = "Hola";
         boolean isVerdad = true;
