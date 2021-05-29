@@ -12,6 +12,36 @@ public class LoginOperadorLogico {
         loginOperadorLogico.login();
         loginOperadorLogico.loginArreglo();
         loginOperadorLogico.loginArreglo2();
+        loginOperadorLogico.loginOperadorTernario();
+    }
+
+    private void loginOperadorTernario() {
+        String[] usersNames = {"admin", "administrador"};
+        String[] passwords = {"pass", "pass"};
+
+        boolean esAutenticado = false;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese usuario: ");
+        String u = scanner.next();
+
+        System.out.println("Ingrese contraseña: ");
+        String p = scanner.next();
+
+        for (int i = 0; i < usersNames.length; i++) {
+            esAutenticado = (usersNames[i].equalsIgnoreCase(u) && passwords[i].equalsIgnoreCase(p)) ? true : false;
+
+            if(esAutenticado){
+                break;
+            }
+        }
+
+
+        if(esAutenticado){
+            System.out.println("Acceso permitido ...");
+        }else{
+            System.out.println("Acceso denegado");
+        }
     }
 
     private void loginArreglo2() {
