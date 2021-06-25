@@ -1,0 +1,98 @@
+@startuml
+
+title Classes - Class Diagram figure
+
+abstract class Figura {
+  #double x;
+  #double y;
+  +Figura(double x, double y)
+}
+
+class Cuadrado extends Figura{
+
+}
+class Circulo extends Figura{
+}
+@enduml
+
+@startuml
+
+title Properties / Methods - Class Diagram
+
+
+skinparam componentStyle uml2
+class Car {
+  .. Field Examples ..
+- Name: Type { arg1, arg2, argn }
++Name: Type { arg1, arg2, argn }
+#Name: Type { arg1, arg2, argn }
+~Name: Type { arg1, arg2, argn }
+
+  .. Method Examples ..
+-Name(): Type { arg1, arg2, argn }
++Name(): Type { arg1, arg2, argn }
+#Name(): Type { arg1, arg2, argn }
+~Name(): Type { arg1, arg2, argn }
+
+  .. Static Example ..
++{static} Name(): Type { arg1, arg2, argn }
+
+  .. Abstract Example ..
++{abstract} Name(): Type { arg1, arg2, argn }
+}
+
+class Car
+ICar ()- Car
+ICar2 ()-- Car
+Car -() ICar3
+
+@enduml
+
+@startuml
+
+title Interfaces - Class Diagram
+
+
+class Car
+ICar ()- Car
+ICar2 ()-- Car
+Car -() ICar3
+
+@enduml
+
+
+@startuml
+
+title Interfaces - Class Diagram
+
+
+class Car
+ICar ()- Car
+ICar2 ()-- Car
+Car -() ICar3
+
+@enduml
+
+@startuml
+
+title Relationships - Class Diagram
+
+
+class Dwelling {
+  +Int Windows
+  +void LockTheDoor()
+}
+
+class Apartment
+class House
+class Commune
+class Window
+class Door
+
+Dwelling <|-down- Apartment: Inheritance
+Dwelling <|-down- Commune: Inheritance
+Dwelling <|-down- House: Inheritance
+Dwelling "1" *-up- "many" Window: Composition
+Dwelling "1" *-up- "many" Door: Composition
+
+@enduml
