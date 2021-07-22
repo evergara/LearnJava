@@ -1,0 +1,8 @@
+Dependencia
+
+Es la relación (más débil de todas) que muestra la relación entre un cliente y el proveedor de un servicio usado por el cliente
+- Cliente es el objeto que solicita el servicio
+- Proveedor es el objeto que provee el servicio solicitado
+
+Gráficamente. las dependencias se muertra como una linea discontinua con una punta de fecha que apunta swl cliente al provedor.
+Cliente ----------->  Proveedor
