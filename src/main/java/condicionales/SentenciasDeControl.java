@@ -48,7 +48,7 @@ public class SentenciasDeControl {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("El mes ").append(mes).append(" del año ").append(anio).append(", tiene ").append(numeroDias).append(" dias");
+        sb.append("El mes ").append(mes).append(" del year ").append(anio).append(", tiene ").append(numeroDias).append(" dias");
         displayMessage(sb.toString());
     }
 
@@ -150,7 +150,7 @@ public class SentenciasDeControl {
             }
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("El mes ").append(mes).append(" del año ").append(anio).append(", tiene ").append(numeroDias).append(" dias");
+        sb.append("El mes ").append(mes).append(" del year ").append(anio).append(", tiene ").append(numeroDias).append(" dias");
         displayMessage(sb.toString());
     }
     private void displayMessage(String message){
@@ -191,7 +191,7 @@ public class SentenciasDeControl {
         Scanner sc = new Scanner(System.in);
         displayMessage("Digite el mes de 1 a 12");
         datos[0] = sc.nextInt();
-        displayMessage("Digite el año (YYYY)");
+        displayMessage("Digite el year (YYYY)");
         datos[1] = sc.nextInt();
 
         return datos;
