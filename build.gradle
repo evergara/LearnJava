@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-sourceCompatibility = 15
-targetCompatibility = 15
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 group 'com.ecosoft'
 version '1.0'

@@ -6,7 +6,7 @@ public class Principal {
     public static void main(String[] args) {
         String name = "E vergara";
         int number = 7;
-        var variable = "Hola";
+        String variable = "Hola";
         boolean isVerdad = true;
         
         System.out.println("number = " + number);

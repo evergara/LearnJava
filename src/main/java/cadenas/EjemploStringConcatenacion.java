@@ -22,13 +22,13 @@ public class EjemploStringConcatenacion {
         String detalle2 = curso.concat(" Con el intructor ").concat(profesor);
         System.out.println("detalle2 = " + detalle2);
 
-
+/*
         String detalle3 = curso.transform(c -> {
            return c.concat(" con el intructor ").concat(profesor);
         });
 
         System.out.println("detalle3 = " + detalle3);
-
+*/
         System.out.println("Curso sigue igual = " + curso);
 
     }
