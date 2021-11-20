@@ -32,7 +32,7 @@ public class SentenciaDeBucles {
             if(num == 0 ||  num<0){
                 displayMessage("Por lo lo menos me ejecuto una vez");
             }
-            displayMessage("en el ciclo while " + band);
+            displayMessage("en el ciclo Do while " + band);
             band++;
         }while (band < num );
     }
